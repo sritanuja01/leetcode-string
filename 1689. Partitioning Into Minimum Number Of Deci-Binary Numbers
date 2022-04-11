@@ -1,0 +1,13 @@
+class Solution {
+    public int minPartitions(String s) {
+    char max='0';
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)>max)
+            {
+                max=s.charAt(i);
+            }
+        }
+        return Integer.parseInt(String.valueOf(max));
+    }
+}
